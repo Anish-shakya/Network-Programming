@@ -13,20 +13,29 @@ try {
 URL url = new URL("http://www.example.com");
 // Create a HttpURLConnection object for the URL
 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
 // Extract and print the Request Method (GET, POST, etc.)
 System.out.println("Request Method: " + connection.getRequestMethod());
+
 // Extract and print the Response Code (e.g. 200 OK, 404 Not Found, etc.)
 System.out.println("Response Code: " + connection.getResponseCode());
+
 // Extract and print the Response Message (e.g. OK, Not Found, etc.)
 System.out.println("Response Message: " + connection.getResponseMessage());
+
 // Extract and print the Content Type of the response
 System.out.println("Content Type: " + connection.getContentType());
+
 // Extract and print the Content Length of the response
 System.out.println("Content Length: " + connection.getContentLength());
+
 // Extract and print the Date of the response as a java.util.Date object
 System.out.println("Date: " + new java.util.Date(connection.getDate()));
+
 // Extract and print the Last Modified date of the resource as a java.util.Date object
 System.out.println("Last Modified: " + new java.util.Date(connection.getLastModified()));
+
+
 // Extract and print the Expiration date of the resource as a java.util.Date object, or "not specified" if no expiration date is set
 long expiration = connection.getExpiration();
 if (expiration == 0) {
@@ -34,6 +43,11 @@ System.out.println("Expiration: not specified");
 } else {
 System.out.println("Expiration: " + new java.util.Date(expiration));
 }
+
+
+
+
+    System.out.println("##############################################################");
 // Extract and print additional headers using a loop
 System.out.println("Additional headers:");
 for (int i = 1; ; i++) {

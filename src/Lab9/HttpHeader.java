@@ -11,7 +11,8 @@ public class HttpHeader {
         
         
         try{
-        URL url = new URL(UrlStr);HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        URL url = new URL(UrlStr);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         //created HttpURLConnection object from URL
         
             System.out.println("Request Method:"+connection.getRequestMethod());
