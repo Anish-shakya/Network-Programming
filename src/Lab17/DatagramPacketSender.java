@@ -18,6 +18,7 @@ public class DatagramPacketSender {
             // Specify the destination IP address and port number
             InetAddress ipAddress = InetAddress.getByName("localhost");
             int port = 12345;
+            
 
             // Create a DatagramPacket with the message, destination address, and port
             DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, ipAddress, port);
@@ -30,6 +31,7 @@ public class DatagramPacketSender {
             // Close the socket
             socket.close();
         } catch (Exception e) {
+            System.out.println(e);
             e.printStackTrace();
         }
     }

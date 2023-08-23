@@ -9,7 +9,7 @@ public class MIME{
 public static void main(String[] args) {
 String contentType1 = URLConnection.guessContentTypeFromName("example.jpg");
 System.out.println("First Content type: " + contentType1);
-String contentType2 = URLConnection.guessContentTypeFromName("example.mp4");
+String contentType2 = URLConnection.guessContentTypeFromName("example.txt");
 System.out.println("Send Content type: " + contentType2);
 String contentType3 = URLConnection.guessContentTypeFromName("example.txt");
 System.out.println("Third Content type: " + contentType3);
