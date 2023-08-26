@@ -12,7 +12,6 @@ public class DatagramPacketReceiver {
             // Create a buffer to store received data
             byte[] receiveData = new byte[1024];
 
-
             // Create a DatagramPacket to receive the data
             DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
 
