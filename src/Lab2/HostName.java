@@ -10,7 +10,9 @@ public class HostName {
         try{
             
             InetAddress host =InetAddress.getLocalHost(); //created object name address
-        System.out.println(host); //call the object addr
+        InetAddress address = InetAddress.getByName("www.ambition.edu.np");
+            System.out.println(address);
+            System.out.println(host); //call the object addr
         }
         catch (Exception e){
             System.out.println("Error getting the IP address:"+e);
