@@ -1,5 +1,5 @@
 //WAP to check https://www.example.com and http://example.com are equal or not
-package Lab7;
+package Unit_wise.Url_and_URI;
 
 import java.net.*;
 

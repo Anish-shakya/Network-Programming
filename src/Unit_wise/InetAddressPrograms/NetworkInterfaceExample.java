@@ -1,5 +1,5 @@
 
-package InetAddressPrograms;
+package Unit_wise.InetAddressPrograms;
 
 import java.net.NetworkInterface;
 import java.net.SocketException;

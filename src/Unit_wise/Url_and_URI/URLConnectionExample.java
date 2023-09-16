@@ -1,6 +1,6 @@
 /* WAP in java that connect to a url ("https://www.example.com") and retrive data from it using 
 openCommand() and getInputSteam() Method*/
-package Lab6;
+package Unit_wise.Url_and_URI;
 import java.net.*;
 import java.io.*;
  

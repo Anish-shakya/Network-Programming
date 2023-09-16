@@ -1,6 +1,6 @@
 /* parsing the URL*/
 /*WAP  to parse the given url https://www.example.com:443/anything/thispage.html?param1= value1#here*/
-package Lab6;
+package Unit_wise.Url_and_URI;
 import java.net.MalformedURLException;
 import java.net.URL;
 

@@ -1,4 +1,4 @@
-    package InetAddressPrograms;
+    package Unit_wise.InetAddressPrograms;
 
     import java.net.*;
     public class Objects {

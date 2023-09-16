@@ -1,4 +1,4 @@
-package InetAddressPrograms;
+package Unit_wise.InetAddressPrograms;
 
 import java.net.*;
 import java.util.*;
