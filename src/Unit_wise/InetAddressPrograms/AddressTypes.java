@@ -11,7 +11,7 @@ public class AddressTypes {
     public static void main(String[] args) {
         try{
         
-        String url ="www.shakyaanish.com.np";
+        String url ="239.255.255.255";
         InetAddress addr = InetAddress.getByName(url);
         
        if(addr.isAnyLocalAddress()){
