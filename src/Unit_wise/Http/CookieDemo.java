@@ -33,8 +33,6 @@ public class CookieDemo {
                 System.out.println("Domain: " + cookie.getDomain());
                 System.out.println("Path: " + cookie.getPath());
                 System.out.println("Expires: " + cookie.getMaxAge() + " seconds");
-                System.out.println("Secure: " + cookie.getSecure());
-                System.out.println("HttpOnly: " + cookie.isHttpOnly());
                 System.out.println("---------");
             };        
     }

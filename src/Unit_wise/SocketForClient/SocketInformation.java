@@ -29,5 +29,11 @@ public class SocketInformation {
         
         System.out.println(LocalAddress.getHostAddress());        
         System.out.println(LocalPort);
+        
+        ///socket connected or close check
+        System.out.println(socket.isConnected());
+        System.out.println(socket.isClosed());
+        socket.close();
+        System.out.println(socket.isClosed());
     }
 }

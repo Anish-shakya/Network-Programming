@@ -17,6 +17,11 @@ public class NetworkInterfaceExample{
             System.out.println("MTU:"+ni.getMTU());
             System.out.println("Hardware Address:"+ni.getHardwareAddress());
             System.out.println("Is up:"+ni.isUp());
+            System.out.println("Interface Address:"+ni.getInterfaceAddresses());
+            System.out.println("Is loop back:"+ni.isLoopback());
+            System.out.println("Is Virtual:"+ni.isVirtual());
+            System.out.println("IS Point to point:"+ni.isPointToPoint());
+            System.out.println("#########################");
         }
     }
 }

@@ -6,7 +6,7 @@
 package Unit_wise.Url_and_URI;
 
 import java.net.*;
-public class URLDemo {
+public class URIDemo {
     public static void main(String[] args) throws Exception {
         String url = "https://admin@www.example.com:443/anything/thispage.html?param1= value1#here";
 //        URI uri = new URI(url);
