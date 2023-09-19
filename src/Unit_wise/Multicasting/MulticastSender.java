@@ -30,8 +30,8 @@ public class MulticastSender {
             DatagramPacket packet = new DatagramPacket(buffer, buffer.length, InetAddress.getByName(multicastGroup), port);
 
             // Send the packet
-            
-            socket.send(packet);
+            for(int i=1;i<=5;i++)
+                socket.send(packet);
             System.out.println("Sent multicast message: " + message);
       
             // Close the socket

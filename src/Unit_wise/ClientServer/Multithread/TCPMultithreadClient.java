@@ -1,16 +1,17 @@
-/*
-    client
- */
-package Unit_wise.ClientServer;
 
-import java.net.*;
-import java.io.*;
+package Unit_wise.ClientServer.Multithread;
 
-import java.net.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
 
-public class TCPClientSide {
-    public static void main(String[] args) throws Exception {
+
+public class TCPMultithreadClient extends Thread {
+    public void run() {
+        try{
         Socket s = new Socket("localhost", 8080);
         
         DataInputStream din = new DataInputStream(s.getInputStream());
@@ -34,6 +35,13 @@ public class TCPClientSide {
         dout.close();
         din.close();
         s.close();
-        
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+    }
+    public static void main(String[] args) {
+        Thread tcp = new TCPMultithreadClient();
+        tcp.start();
     }
 }

@@ -1,13 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Unit_wise.ClientServer.Multithread;
 
-package Unit_wise.ClientServer;
-
-import java.net.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.Date;
 
+/**
+ *
+ * @author shaky
+ */
+public class TCPMultithreadServer extends Thread { 
 
-public class TCPServerSide {
-    public static void main(String[] args) {
+  public void run() {
          try{
                 ServerSocket ss = new ServerSocket(8080);  
                  
@@ -37,5 +49,9 @@ public class TCPServerSide {
          catch(Exception e){
              System.out.println(e);
          }
+    }
+    public static void main(String[] args) {
+        Thread tcp = new TCPMultithreadServer();
+        tcp.start();
     }
 }

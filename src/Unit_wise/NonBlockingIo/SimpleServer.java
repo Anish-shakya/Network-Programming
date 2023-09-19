@@ -22,13 +22,10 @@ public class SimpleServer {
             serverSocketChannel.bind(new InetSocketAddress(port));
             System.out.println("Server listening on port " + port);
 
-            // Accept incoming connections
+  
                 SocketChannel socketChannel = serverSocketChannel.accept();
                 System.out.println("Accepted connection from: " + socketChannel.getRemoteAddress());
-
-                // Handle the connection (you can implement your logic here)
-
-                // Close the connection when done
+               
                 socketChannel.close();
         } catch (IOException e) {
             e.printStackTrace();
