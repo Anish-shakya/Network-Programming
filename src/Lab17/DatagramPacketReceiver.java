@@ -19,6 +19,7 @@ public class DatagramPacketReceiver {
             // Receive the packet
             socket.receive(receivePacket);
 
+
             // Extract the received message
             String receivedMessage = new String(receivePacket.getData(), 0, receivePacket.getLength());
             int port = receivePacket.getPort();
